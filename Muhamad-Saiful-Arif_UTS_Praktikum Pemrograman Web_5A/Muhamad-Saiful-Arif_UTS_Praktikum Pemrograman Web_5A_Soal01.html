@@ -1,0 +1,81 @@
+<!--
+    Nama: Muhamad Saiful Arif
+    NIM: 1903015008
+    Kelas: 5A
+    Matkul: Praktikum Pemrograman Web
+    Soal-01
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhamad-Saiful-Arif_UTS_Praktikum Pemrograman Web_5A_Soal 01</title>
+    <style type="text/css">
+        /*No. 1*/ .paragraf{
+            font-size: 16pt;
+        }
+        /*No. 2*/ p > strong{
+            text-decoration: underline;
+        }
+        /*No. 3*/ div ~ p{
+            color: blue;
+        }
+        /*No. 4*/ div strong{
+            color: red;
+        }
+        /*No. 5*/ li[id="daftar3"]{
+            background-color: yellow;
+        }
+        /*No. 6*/ #paragraf2{
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <p id="paragraf1" class="paragraf"><strong>Cascading Style Sheets (CSS)</strong>
+        adalah bahasa yang digunakan memberikan style pada halaman web yang ditulis dengan kode HTML.
+    </p>
+    <p id="paragraf2" class="paragraf">
+        Penggunaan <strong>CSS</strong> dapat dilakukan dengan beberapa cara yaitu :
+        <ul>
+            <li class="daftar" id="daftar1">
+                <div><strong>Inline CSS</strong></div>
+                <p><em>
+                    Cara ini dituliskan langsung pada sebuah tag HTML dengan memberikan property 
+                    dan value CSS didalam atribut style pada tag HTML tersebut.
+                </em></p>
+            </li>
+            <li class="daftar" id="daftar2">
+                <div><strong>Internal CSS</strong></div>
+                <p><em>
+                    Penulisan CSS dengan cara ini dilakukan di dalam tag 
+                    <strong>&lt;head&gt;</strong>, bukan di dalam tag <strong>&lt;body&gt;</strong>
+                </em></p>
+            </li>
+            <li class="daftar" id="daftar3">
+                <div><strong>Eksternal CSS</strong></div>
+                <p><em>
+                    External CSS adalah cara untuk menyimpan CSS pada sebuah file, 
+                    kemudian file tersebut dapat digunakan oleh banyak halaman web.
+                </em></p>
+            </li>
+        </ul>
+    </p>
+</body>
+</html>
+
+<!--
+    Tentukan bagian skrip diatas yang diberi tanda nomor 1 sampai 6, dengan ketentuan sebagai berikut :
+· No 1 : Digunakan untuk merubah ukuran font pada paragraf pertama dan kedua menjadi 16pt.
+· No 2 : Gunakan Child Selector untuk memberikan garis bawah pada teks yang dicetak tebal (bold).
+Rule ini hanya berpengaruh pada paragraf pertama dan kedua.
+· No 3 : Gunakan General Sibling Selector sehingga teks paragraf pada list menjadi berwarna biru.
+· No 4 : Gunakan Descendant Selector agar warna teks yang dicetak tebal (bold) pada list menjadi
+berwarna merah.
+· No 5 : Gunakan Attribute Selector agar list item ketiga ditampilkan dengan warna background kuning.
+· No 6 : Digunakan untuk membuat tampilan paragraf kedua menjadi warna background merah dan
+warna teks putih.
+-->

@@ -1,0 +1,65 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script language="javascript">
+function proses(){
+    $("#tampil").removeAttr("style");
+    var check1 = $("#in_cetak1").prop("checked")  ? "true" : "false";
+       
+var namesiswa1 = document.getElementById("in_nama1").value;
+var namesiswa2 = document.getElementById("in_nama2").value;
+var beratbadansiswa1 = document.getElementById("in_berat1").value;
+var beratbadansiswa2 = document.getElementById("in_berat2").value;
+var hasil;
+   // var check2 =  $("#in_cetak2").prop("checked")  ? "true" : "false";
+if(check1 == "true")
+{
+
+if(parseInt(beratbadansiswa1) > parseInt(beratbadansiswa2))
+{
+    hasil = beratbadansiswa1
+}
+else
+{
+    hasil = beratbadansiswa2
+}
+var html  = "Nama siswa 1 : "+namesiswa1+" <br> Berat Badan Siswa : "+beratbadansiswa1+" KG <br> Nama Siswa 2 : "+namesiswa2+" <br> Berat Badan Siswa 2 : "+beratbadansiswa2+" KG <br> Berat Badan Maksimum Adalah "+hasil+" KG";
+
+document.getElementById("tampil").innerHTML = html
+} 
+else
+{
+hasil = (parseInt(beratbadansiswa1) + parseInt(beratbadansiswa2));
+hasil = (parseInt(hasil)/2);
+var html  = "Nama siswa 1 : "+namesiswa1+" <br> Berat Badan Siswa : "+beratbadansiswa1+" KG <br> Nama Siswa 2 : "+namesiswa2+" <br> Berat Badan Siswa 2 : "+beratbadansiswa2+" KG <br> Rata rata siswa Berat Badan Adalah "+hasil+" KG";
+document.getElementById("tampil").innerHTML = html
+}
+}
+function reset(){
+document.getElementById("in_nama1").value = "";
+document.getElementById("in_nama2").value = ""; 
+document.getElementById("in_berat1").value = "0"
+document.getElementById("in_berat2").value = "0"
+$("#tampil").attr("style","display:none");
+$("#in_cetak2").prop('checked', false);
+$("#in_cetak1").prop('checked', true);
+}
+</script>
+</head>
+<body>
+<H1>DATA BERAT BADAN SISWA</H1>
+Nama Siswa 1 : <input type="text" id="in_nama1"><br>
+Berat Badan Siswa 1 : <input type="text" id="in_berat1" value="0"><br>
+Nama Siswa 2 : <input type="text" id="in_nama2"><br>
+Berat Badan Siswa 2 : <input type="text" id="in_berat2" value="0"><br>
+Pilih Cetak : <br>
+<input type="radio" id="in_cetak1" name="in_cetak" checked>Berat badan siswa maksimum
+<input type="radio" id="in_cetak2" name="in_cetak">Rata-rata berat badan siswa
+<p>
+<input type="button" onClick="proses();" value="Hitung">
+<input type="button" onClick="reset();" value="Reset">
+</p>
+<p id="tampil">
+</p>
+</body>
+</html

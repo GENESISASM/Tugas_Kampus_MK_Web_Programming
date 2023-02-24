@@ -1,0 +1,68 @@
+/*Nama : Muhamad Saiful Arif
+    Nim : 1903015008
+    Kelas : 5A
+    Matkul : Prak. Pemrograman Web
+*/
+
+body{
+    margin: 0;
+    line-height: 1.5;
+}
+.header h1{
+    color: #ffffff;
+    text-align: center;
+    padding: 30px;
+    margin: 10px;
+    background-color: #48cae4;
+    font-size: 60px;
+    border-radius: 15px;
+    font-family: 'Lato', sans-serif;
+}
+.nav h1{
+    color: #ffffff;
+    text-align: center;
+    padding: 12px;
+    margin: 10px;
+    background-color: #48cae4;
+    font-size: 24px;
+    border-radius: 15px;
+    font-family: 'Lato', sans-serif;
+}
+.sidebar h1{
+    background-color: #48cae4;
+    text-align: center;
+    color: #ffffff;
+    border-radius: 15px;
+    margin: 10px;
+    width: 200px;
+    height: 300px;
+    padding: 1em;
+    font-family: 'Lato', sans-serif;
+}
+.content h1{
+    background-color: #48cae4;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    color: #ffffff;
+    border-radius: 15px;
+    display: grid;
+    margin: 10px;
+    width: 990px;
+    height: 300px;
+    padding: 1em;
+    left: 0;
+}
+.container{
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+.footer{
+    color: #ffffff;
+    text-align: center;
+    padding: 30px;
+    margin: 10px;
+    background-color: #48cae4;
+    font-size: 24px;
+    border-radius: 15px;
+    font-family: 'Lato', sans-serif;
+}
